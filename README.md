@@ -1,6 +1,6 @@
 # fzf-steam
 A shell script to launch installed steam games.
-Thank you ntcarlson for the initial script and inspiration - https://github.com/ntcarlson/dotfiles
+Thank you ntcarlson for the initial script and inspiration - https://github.com/ntcarlson/dotfiles/blob/delta/config/rofi/scripts/update-game-entries.sh
 
 Dependecies - `fzf lnch`
 
