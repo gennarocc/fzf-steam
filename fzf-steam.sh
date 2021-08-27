@@ -6,7 +6,7 @@
 SCRIPT_DIR=$(dirname $(realpath $0))
 
 # Change to your steam library
-STEAM_ROOT=~/.local/share/Steam/steamapps/
+STEAM_ROOT=~/.local/share/Steam/steamapps
 APP_PATH=$HOME/.local/share/applications/steam
 
 # Fetch all Steam library folders.
