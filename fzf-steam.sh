@@ -49,13 +49,16 @@ for library in $(steam-libraries); do
             continue
         fi
 
+        if echo "$title" | grep -qe "Runtime"; then
+            continue
+        fi
         # Uncomment for verbose generation
         # echo -e "Generating $entry\t($title)"
         env-entry "$appid" "$title" "$boxart"> "$entry"
     done
 done
 
-cd ~/.local/share/applications/steam && eval $(cat "$(ls -1 | sed -e 's/\.env$//' | fzf --border).env")
+cd ~/.local/share/applications/steam && eval $(cat "$(ls -1 | sed -e 's/\.env$//' | fzf --border ).env")
 
 steam-runtime steam://rungameid/$GAME_ID | xargs lnch
 
